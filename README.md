@@ -63,7 +63,7 @@ client::desktop::myclient
     "refresh_token",
     "authorization_code"
   ],
-  "clientId": "om",
+  "clientId": "myclient",
   "registeredRedirectUri": [
     "http://localhost:9000/callback"
   ],
@@ -100,7 +100,7 @@ http://localhost:8080/oauth/authorize?client_id=myclient&redirect_uri=http://loc
 Get a token
 
 ```
-curl -X POST --user myclient:mysecret http://localhost:8080/oauth/token -H "content-type: application/x-www-form-urlencoded" -d "code=RuIR16&grant_type=authorization_code&redirect_uri=http://localhost:9000/callback&scope=read"
+curl -X POST --user myclient:password http://localhost:8080/oauth/token -H "content-type: application/x-www-form-urlencoded" -d "code=RuIR16&grant_type=authorization_code&redirect_uri=http://localhost:9000/callback&scope=read"
 
 {"access_token":"fc8d57f9-cdea-4626-8598-4ed72baae558","token_type":"bearer","refresh_token":"08ebfefb-3cc1-4396-81b4-c23429bab565","expires_in":119,"scope":"read"}     
 ```
