@@ -66,7 +66,7 @@ client::desktop::myclient
     "refresh_token",
     "authorization_code"
   ],
-  "clientId": "myclient",
+  "clientId": "desktop",
   "registeredRedirectUri": [
     "http://localhost:9000/callback"
   ],
