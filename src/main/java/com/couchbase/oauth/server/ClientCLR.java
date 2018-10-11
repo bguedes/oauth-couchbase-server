@@ -78,7 +78,7 @@ public class ClientCLR implements CommandLineRunner {
     public void createUser(){
     	CouchbaseUserDetails user = new CouchbaseUserDetails();
         user.setId("user::1");
-        user.setUsername("foo");
+        user.setUsername("brian");
         user.setPassword(passwordEncoder.encode("password"));
         user.setEnabled(true);
         user.setAuthorities(new HashSet<>(Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))));
