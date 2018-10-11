@@ -90,7 +90,7 @@ client::desktop::myclient
   ]
 }
 ```
-clientId 	 : myclient
+clientId 	 : desktop
 clientSecret : password
 
 For testing without a client OAuth application :
@@ -98,7 +98,7 @@ For testing without a client OAuth application :
 Authentification and accept ressources access 
 
 ```
-http://localhost:8080/oauth/authorize?client_id=myclient&redirect_uri=http://localhost:9000/callback&response_type=code&scope=read
+http://localhost:8080/oauth/authorize?client_id=desktop&redirect_uri=http://localhost:9000/callback&response_type=code&scope=read
 ```
 
 You will have this url in result :
@@ -112,7 +112,7 @@ This code value has to be kept and used in the next curl instruction to get a va
 Get a token
 
 ```
-curl -X POST --user myclient:password http://localhost:8080/oauth/token -H "content-type: application/x-www-form-urlencoded" -d "code=RuIR16&grant_type=authorization_code&redirect_uri=http://localhost:9000/callback&scope=read"
+curl -X POST --user desktop:password http://localhost:8080/oauth/token -H "content-type: application/x-www-form-urlencoded" -d "code=RuIR16&grant_type=authorization_code&redirect_uri=http://localhost:9000/callback&scope=read"
 
 {"access_token":"fc8d57f9-cdea-4626-8598-4ed72baae558","token_type":"bearer","refresh_token":"08ebfefb-3cc1-4396-81b4-c23429bab565","expires_in":119,"scope":"read"}     
 ```
