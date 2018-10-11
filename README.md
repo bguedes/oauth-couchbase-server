@@ -101,6 +101,14 @@ Authentification and accept ressources access
 http://localhost:8080/oauth/authorize?client_id=myclient&redirect_uri=http://localhost:9000/callback&response_type=code&scope=read
 ```
 
+You will have this url in result :
+
+```
+http://localhost:9000/callback?code=RuIR16
+```
+
+This code value has to be kept and used in the next curl instruction to get a valid tokens
+
 Get a token
 
 ```
