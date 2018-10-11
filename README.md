@@ -37,7 +37,7 @@ user::1
 
 ```javascript
 {
-  "password": "password",
+  "password": "$2a$10$jz3YUk.8gFlDJVaI40mloeiCfJWYu1u/eGcbyeqvrDYkDmWyK8esq",
   "credentialsNonExpired": true,
   "accountNonExpired": true,
   "_class": "com.couchbase.oauth.server.model.CouchbaseUserDetails",
@@ -48,7 +48,7 @@ user::1
     }
   ],
   "enabled": true,
-  "username": "myuser",
+  "username": "donald",
   "accountNonLocked": true
 }
 ```
@@ -63,12 +63,12 @@ client::desktop::myclient
     "refresh_token",
     "authorization_code"
   ],
-  "clientId": "myclient",
+  "clientId": "om",
   "registeredRedirectUri": [
     "http://localhost:9000/callback"
   ],
   "secretRequired": true,
-  "refreshTokenValiditySeconds": 50000,
+  "refreshTokenValiditySeconds": 300,
   "authorities": [],
   "autoApprove": false,
   "scoped": false,
@@ -77,8 +77,8 @@ client::desktop::myclient
     "read",
     "write"
   ],
-  "accessTokenValiditySeconds": 50000,
-  "clientSecret": "mysecret",
+  "accessTokenValiditySeconds": 300,
+  "clientSecret": "$2a$10$VW4Gob/x4lrLQh4a7H6lAelkfulwK8ymhvp92AwbxIczbJWx2fYui",
   "_class": "com.couchbase.oauth.server.model.CouchbaseClientDetails",
   "resourceIds": [
     "resource_id",
