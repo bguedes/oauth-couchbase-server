@@ -53,6 +53,9 @@ user::1
 }
 ```
 
+user 		: brian
+password 	: password
+
 ## Creating client manually in Couchbase
 
 client::desktop::myclient
@@ -87,7 +90,8 @@ client::desktop::myclient
   ]
 }
 ```
-
+clientId 	 : myclient
+clientSecret : password
 
 For testing without a client OAuth application :
 
