@@ -95,7 +95,7 @@ clientSecret : password
 
 For testing without a client OAuth application :
 
-Authentification and accept ressources access 
+Authorization and accept ressources access 
 
 ```
 http://localhost:8080/oauth/authorize?client_id=desktop&redirect_uri=http://localhost:9000/callback&response_type=code&scope=read
